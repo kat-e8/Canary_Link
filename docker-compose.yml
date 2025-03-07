@@ -7,6 +7,7 @@ services:
     hostname: gateway
     ports:
       - 9088:8088
+      - 62541:62541
     volumes:
       - gateway-data:/usr/local/bin/ignition/data
       - ./gw-init/gateway.gwbk:/restore.gwbk

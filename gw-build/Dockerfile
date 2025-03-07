@@ -6,3 +6,6 @@ USER root
 
 RUN apt-get -y update
 RUN apt-get install -y git
+
+COPY *.modl /usr/local/bin/ignition/user-lib/modules/
+
